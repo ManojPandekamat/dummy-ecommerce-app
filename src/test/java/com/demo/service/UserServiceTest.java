@@ -86,7 +86,7 @@ class UserServiceTest {
 
     private static Order order(Long id, String product, String amount, Users user) {
         Order order = new Order(product, new BigDecimal(amount), user);
-        
+        order.setId(id);
         return order;
     }
 }
